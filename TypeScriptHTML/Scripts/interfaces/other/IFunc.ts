@@ -1,10 +1,15 @@
-﻿interface ISumFunc {
+﻿interface IFunc {
     (x: number, y: number): number; //like delegate
 }
 
-var someSumFunc: (x: ISumFunc) => void; //lambda expression
-someSumFunc = (num) => console.log(num); //another lambda expression
+var someIFunc: IFunc =
+    function(x: number, y: number): number {
+        return x + y;
+    }
 
-someSumFunc = function (num: ISumFunc) {
-    num(1,1);
+var func: (x: IFunc) => void; //lambda declaration
+func = (num) => console.log(num); //lambda expression
+
+func = function(num: IFunc) {
+    num(1, 1);
 }

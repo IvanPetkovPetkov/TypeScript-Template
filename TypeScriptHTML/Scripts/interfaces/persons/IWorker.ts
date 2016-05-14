@@ -1,4 +1,5 @@
-﻿module interfaces.persons {
+﻿/// <reference path="../jobs/ijob.ts" />
+module interfaces.persons {
     import IJobs = interfaces.jobs;   //import namespaces
 
     export interface IWorker extends IPerson {

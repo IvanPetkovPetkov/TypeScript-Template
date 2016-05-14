@@ -14,7 +14,7 @@ var WorkState;
     WorkState[WorkState["Sick"] = 8] = "Sick";
 })(WorkState || (WorkState = {}));
 //=====================================================================
-console.log('----------Types----------');
+console.log('----------Basic Types----------');
 var diffTypes;
 //types of parameters
 function setTypedFunction(stringType, boolType, arrStringType, numberType, anyType, state) {
@@ -32,6 +32,7 @@ console.log('---------------------------------------');
 console.log('----------Pointer of function----------');
 //pointer of function
 var someFunc;
+var someFunc2;
 //implementation of function
 someFunc = function (x, y) {
     return (x + y).toString();

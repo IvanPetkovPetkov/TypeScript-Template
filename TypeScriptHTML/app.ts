@@ -1,4 +1,5 @@
 ﻿///// <reference path="typings/jquery/jquery.d.ts" />
+
 //import jobs = Jobs;   //import namespaces
 //import persons = Persons;
 
@@ -16,7 +17,7 @@ enum WorkState {
 }
 
 //=====================================================================
-console.log('----------Types----------');
+console.log('----------Basic Types----------');
 
 var diffTypes;
 //types of parameters
@@ -38,9 +39,10 @@ console.log('----------Pointer of function----------');
 
 //pointer of function
 var someFunc: (x: number, y: number) => string;
+var someFunc2: (x: number, y: number) => string;
 
 //implementation of function
-someFunc = function(x: number, y: number) {
+someFunc = function (x: number, y: number) {
     return (x + y).toString();
 }
 console.log('someFunc: ' + someFunc(5, 8));
