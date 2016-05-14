@@ -1,0 +1,12 @@
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptFundamentals.dll.config
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptFundamentals.dll
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\bin\TypeScriptFundamentals.pdb
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptFundamentals.csprojResolveAssemblyReference.cache
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptFundamentals.dll
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTMLApp1\TypeScriptHTMLApp1\obj\Debug\TypeScriptFundamentals.pdb
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\bin\TypeScriptFundamentals.dll.config
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\bin\TypeScriptFundamentals.dll
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\bin\TypeScriptFundamentals.pdb
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.csprojResolveAssemblyReference.cache
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.dll
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.pdb
