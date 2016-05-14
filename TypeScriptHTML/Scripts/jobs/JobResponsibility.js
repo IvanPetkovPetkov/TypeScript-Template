@@ -6,7 +6,7 @@ var Jobs;
             this.role = role;
         }
         return JobResponsibility;
-    }());
+    })();
     Jobs.JobResponsibility = JobResponsibility;
 })(Jobs || (Jobs = {}));
 //# sourceMappingURL=JobResponsibility.js.map
