@@ -20,7 +20,7 @@ var Jobs;
             return jobResponsibilityRemoved;
         };
         return Job;
-    }());
+    })();
     Jobs.Job = Job;
 })(Jobs || (Jobs = {}));
 //# sourceMappingURL=Job.js.map
