@@ -28,6 +28,9 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\Specs\expectThat.mocha.js" />
+    <Content Include="Scripts\Specs\expectThat.mocha.min.js" />
+    <Content Include="Scripts\Specs\index.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -44,10 +47,15 @@
     <TypeScriptCompile Include="Scripts\interfaces\jobs\IJob.ts" />
     <TypeScriptCompile Include="Scripts\jobs\Job.ts" />
     <TypeScriptCompile Include="Scripts\jobs\JobResponsibility.ts" />
+    <TypeScriptCompile Include="Scripts\tests\persons\WorkerTests.ts" />
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\mocha\mocha-node.d.ts" />
+    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="Scripts\Specs\example.spec.coffee" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

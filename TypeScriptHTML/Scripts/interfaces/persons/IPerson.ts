@@ -3,6 +3,6 @@
         firstName: string;
         lastName: string;
         sex: Sex;
-        age?: number; //optional property
+        age?: number; 
     }
 }

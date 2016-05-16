@@ -16,7 +16,7 @@ module Collections {
         }
     }
 
-    export class ListWorkers<T extends interfaces.persons.IWorker>  { //constraint of generic type
+    export class ListWorkers<T extends interfaces.persons.IWorker>  { 
         private _collection: T[];
 
         constructor() {

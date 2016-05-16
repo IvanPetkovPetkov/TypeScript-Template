@@ -1,3 +1,3 @@
 ﻿interface ICollection {
-    [index: string]: interfaces.jobs.IJobResponsibility //indexer equals IDictionary<string, IVehicle>
+    [index: string]: interfaces.jobs.IJobResponsibility
 }

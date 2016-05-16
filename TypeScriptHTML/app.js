@@ -1,6 +1,6 @@
-///// <reference path="typings/jquery/jquery.d.ts" />
-//import jobs = Jobs;   //import namespaces
-//import persons = Persons;
+/// <reference path="typings/jquery/jquery.d.ts" />
+//=====================================================================
+console.log('----------Basic Types----------');
 var stringType;
 var boolType;
 var arrStringType;
@@ -13,8 +13,6 @@ var WorkState;
     WorkState[WorkState["Vacation"] = 5] = "Vacation";
     WorkState[WorkState["Sick"] = 8] = "Sick";
 })(WorkState || (WorkState = {}));
-//=====================================================================
-console.log('----------Basic Types----------');
 var diffTypes;
 //types of parameters
 function setTypedFunction(stringType, boolType, arrStringType, numberType, anyType, state) {
@@ -30,24 +28,23 @@ setTypedFunction('ivan', true, ['Ivan', 'petkov'], 10, function () { return 5; }
 //=====================================================================
 console.log('---------------------------------------');
 console.log('----------Pointer of function----------');
-//pointer of function
+//define typed pointer of function
 var someFunc;
-var someFunc2;
-//implementation of function
+//implementation of typed function
 someFunc = function (x, y) {
     return (x + y).toString();
 };
 console.log('someFunc: ' + someFunc(5, 8));
-//another implementation of function
+//another lambda implementation of function
 someFunc = function (x, y) { return (x + y).toString(); };
 console.log('someFunc lambda implementation: ' + someFunc(5, 8));
-function Sum(x, y, z /*defaul value*/) {
+function sumFunc(x, y, z) {
     if (z === void 0) { z = 100; }
     return {
         sum: x + y + z
     };
 }
-console.log('Func return anonymous object: ' + Sum(5, 8).sum);
+console.log('Func return anonymous object: ' + sumFunc(5, 8).sum);
 //get unknown count of parameters
 function SumMultiParameters(x) {
     var restNumber = [];
@@ -75,21 +72,6 @@ printMessage('Message from printMessage function!');
 printMessage(5);
 //=====================================================================
 console.log('---------------------------------------');
-console.log('----------------Generic----------------');
-var someGenericListOfNumbers = new Collections.List();
-someGenericListOfNumbers.add(10);
-someGenericListOfNumbers.add(20);
-someGenericListOfNumbers.add(30);
-console.log('someGenericListOfNumbers.count: ' + someGenericListOfNumbers.count);
-var someGenericListOfString = new Collections.List();
-someGenericListOfString.add('asbv');
-someGenericListOfString.add('asbvas');
-console.log('someGenericListOfString.count: ' + someGenericListOfString.count);
-var someGenericListOfWorkers = new Collections.ListWorkers();
-someGenericListOfWorkers.add(new Persons.Worker('Ivan', 'Petkov', Sex.Male, 32, { experince: 8, email: 'ivan@epam.com' }));
-console.log('someGenericListOfWorkers.count: ' + someGenericListOfWorkers.count);
-//=====================================================================
-console.log('---------------------------------------');
 console.log('-----------------Indexer(Dictionary)-----------------');
 var collection = {};
 collection['First'] = new Jobs.JobResponsibility('Able to read and understand project and requirement documentation; able to create documentation describing his/her code.', 'Plays the Developer role.');
@@ -115,6 +97,21 @@ someWorker.addJob(qaJob);
 console.log('Display all Jobs with Responsibilities');
 var msg = someWorker.displayJobResponsibility();
 console.log(msg);
+//=====================================================================
+console.log('---------------------------------------');
+console.log('----------------Generic----------------');
+var someGenericListOfNumbers = new Collections.List();
+someGenericListOfNumbers.add(10);
+someGenericListOfNumbers.add(20);
+someGenericListOfNumbers.add(30);
+console.log('someGenericListOfNumbers.count: ' + someGenericListOfNumbers.count);
+var someGenericListOfString = new Collections.List();
+someGenericListOfString.add('asbv');
+someGenericListOfString.add('asbvas');
+console.log('someGenericListOfString.count: ' + someGenericListOfString.count);
+var someGenericListOfWorkers = new Collections.ListWorkers();
+someGenericListOfWorkers.add(new Persons.Worker('Ivan', 'Petkov', Sex.Male, 32, { experince: 8, email: 'ivan@epam.com' }));
+console.log('someGenericListOfWorkers.count: ' + someGenericListOfWorkers.count);
 console.log('---------------------------------------');
 console.log('-----------------jQuery----------------');
 //=====================================================================

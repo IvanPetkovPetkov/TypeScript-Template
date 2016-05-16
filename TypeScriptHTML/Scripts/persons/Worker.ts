@@ -1,21 +1,19 @@
 ﻿module Persons {
-    import IJobs = interfaces.jobs;   //import namespaces
+    import IJobs = interfaces.jobs;   
 
     export class Worker extends Person implements interfaces.persons.IWorker {
         private _monthlyIncome: number;
 
-        //anonymous object
         additionalInfo: { experince: number; email: string };
 
         Jobs = new Array<IJobs.IJob>();
 
         constructor(firstName: string, lastName: string, sex: Sex, age: number, additionalInfo: { experince: number, email: string }) {
-            super(firstName, lastName, sex, age);  //reuse the base functionality
+            super(firstName, lastName, sex, age);  
             this._monthlyIncome = 0;
             this.additionalInfo = additionalInfo;
         }
 
-        //define getters and setters
         get monthlyIncome() {
             return this._monthlyIncome;
         }

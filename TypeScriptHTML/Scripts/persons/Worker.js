@@ -8,13 +8,12 @@ var Persons;
     var Worker = (function (_super) {
         __extends(Worker, _super);
         function Worker(firstName, lastName, sex, age, additionalInfo) {
-            _super.call(this, firstName, lastName, sex, age); //reuse the base functionality
+            _super.call(this, firstName, lastName, sex, age);
             this.Jobs = new Array();
             this._monthlyIncome = 0;
             this.additionalInfo = additionalInfo;
         }
         Object.defineProperty(Worker.prototype, "monthlyIncome", {
-            //define getters and setters
             get: function () {
                 return this._monthlyIncome;
             },
