@@ -1,6 +1,5 @@
 /// <reference path="../../typings/mocha/mocha.d.ts" />
-/// <reference path="../../Scripts/typings/assert/assert.d.ts" />
-var _this = this;
+///// <reference path="../../Scripts/typings/assert/assert.d.ts" />
 //var assertRequire = require('assert');
 describe("Test Suite 1", function () {
     it("Test A", function () {
@@ -11,7 +10,7 @@ describe("Test Suite 1", function () {
                 throw new Error('Expected 2 + 3 = 5 but was ' + result);
             }
         });
-        assert.equal(true, _this.resultBool, 'Not true');
+        //assert.equal(true, this.resultBool, 'Not true');
     });
 });
 //# sourceMappingURL=WorkerTests.js.map

@@ -25,6 +25,7 @@
     <Content Include="app.css" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
+    <None Include=".bin\node.cmd" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
@@ -50,7 +51,6 @@
     <TypeScriptCompile Include="Scripts\interfaces\jobs\IJob.ts" />
     <TypeScriptCompile Include="Scripts\jobs\Job.ts" />
     <TypeScriptCompile Include="Scripts\jobs\JobResponsibility.ts" />
-    <TypeScriptCompile Include="Scripts\typings\assert\assert.d.ts" />
     <TypeScriptCompile Include="tests\persons\WorkerTests.ts" />
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
