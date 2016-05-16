@@ -20,7 +20,7 @@
             return this._monthlyIncome;
         }
 
-        set health(newMonthlyIncome: number) {
+        set monthlyIncome(newMonthlyIncome: number) {
             if (Sex.Male) {
                 if (newMonthlyIncome < 0) {
                     throw new Error('Not good!');

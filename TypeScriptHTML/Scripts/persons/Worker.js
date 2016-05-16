@@ -18,10 +18,6 @@ var Persons;
             get: function () {
                 return this._monthlyIncome;
             },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Worker.prototype, "health", {
             set: function (newMonthlyIncome) {
                 if (Sex.Male) {
                     if (newMonthlyIncome < 0) {
