@@ -10,3 +10,9 @@ C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeSc
 C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.csprojResolveAssemblyReference.cache
 C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.dll
 C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.pdb
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\bin\TypeScriptFundamentals.dll.config
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\bin\TypeScriptFundamentals.dll
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\bin\TypeScriptFundamentals.pdb
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.dll
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.pdb
+C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.csprojResolveAssemblyReference.cache

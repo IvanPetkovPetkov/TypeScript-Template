@@ -64,14 +64,13 @@ console.log('---------------------------------------');
 console.log('----------------Overload---------------');
 function printMessage(msg) {
     if (typeof msg == 'string')
-        console.log(msg);
+        console.log("string " + msg);
     if (typeof msg == 'number')
-        console.log(msg.toString());
+        console.log("number " + msg.toString());
 }
 printMessage('Message from printMessage function!');
 printMessage(5);
-//=====================================================================
-console.log('---------------------------------------');
+printMessage("5");
 console.log('-----------------Indexer(Dictionary)-----------------');
 var collection = {};
 collection['First'] = new Jobs.JobResponsibility('Able to read and understand project and requirement documentation; able to create documentation describing his/her code.', 'Plays the Developer role.');
@@ -97,7 +96,15 @@ someWorker.addJob(qaJob);
 console.log('Display all Jobs with Responsibilities');
 var msg = someWorker.displayJobResponsibility();
 console.log(msg);
-//=====================================================================
+console.log('-----------------Clients----------------');
+console.log('------------logging with decorators-----');
+var someClient = new Persons.Client('Client', 'Testov', Sex.Male, 23, 'test@test.com');
+//someClient.introduce();
+var user;
+user = someClient;
+user.introduce();
+user = someWorker;
+user.introduce();
 console.log('---------------------------------------');
 console.log('----------------Generic----------------');
 var someGenericListOfNumbers = new Collections.List();

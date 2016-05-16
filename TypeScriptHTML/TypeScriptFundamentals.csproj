@@ -37,6 +37,9 @@
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Scripts\collections\List.ts" />
     <TypeScriptCompile Include="Scripts\consts\Consts.ts" />
+    <TypeScriptCompile Include="Scripts\decorators\definitions.ts" />
+    <TypeScriptCompile Include="Scripts\interfaces\persons\IClient.ts" />
+    <TypeScriptCompile Include="Scripts\persons\Client.ts" />
     <TypeScriptCompile Include="Scripts\persons\Worker.ts" />
     <TypeScriptCompile Include="Scripts\persons\Person.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IWorker.ts" />
@@ -96,6 +99,18 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
