@@ -16,7 +16,7 @@ var Collections;
             configurable: true
         });
         return List;
-    }());
+    })();
     Collections.List = List;
     var ListWorkers = (function () {
         function ListWorkers() {
@@ -33,7 +33,7 @@ var Collections;
             configurable: true
         });
         return ListWorkers;
-    }());
+    })();
     Collections.ListWorkers = ListWorkers;
 })(Collections || (Collections = {}));
 //# sourceMappingURL=List.js.map

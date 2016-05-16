@@ -75,14 +75,19 @@ console.log('----------------Overload---------------');
 
 function printMessage(msg: string): void;
 function printMessage(msg: number): void;
-function printMessage(msg) {
+
+function printMessage(msg: number | string): void; /*union parameters */
+
+
+function printMessage(msg) { 
     if (typeof msg == 'string')
-        console.log(msg);
+        console.log("string " + msg);
     if (typeof msg == 'number')
-        console.log(msg.toString());
+        console.log("number " + msg.toString());
 }
 printMessage('Message from printMessage function!');
 printMessage(5);
+printMessage("5");
 
 //=====================================================================
 console.log('---------------------------------------');
@@ -135,6 +140,19 @@ someWorker.addJob(qaJob);
 console.log('Display all Jobs with Responsibilities');
 var msg = someWorker.displayJobResponsibility();
 console.log(msg);
+
+console.log('-----------------Clients----------------');
+console.log('------------logging with decorators-----');
+
+var someClient = new Persons.Client('Client', 'Testov', Sex.Male, 23, 'test@test.com' );
+//someClient.introduce();
+
+var user: Persons.Client | Persons.Worker;
+user = someClient;
+user.introduce();
+
+user = someWorker;
+user.introduce();
 
 console.log('---------------------------------------');
 console.log('-----------------jQuery----------------');

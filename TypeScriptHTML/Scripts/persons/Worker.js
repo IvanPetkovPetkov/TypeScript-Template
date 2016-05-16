@@ -66,7 +66,7 @@ var Persons;
             return _super.prototype.introduce.call(this) + ' - ' + this.additionalInfo.experince + ' years experiance' + ' email:' + this.additionalInfo.email;
         };
         return Worker;
-    }(Persons.Person));
+    })(Persons.Person);
     Persons.Worker = Worker;
 })(Persons || (Persons = {}));
 //# sourceMappingURL=Worker.js.map
