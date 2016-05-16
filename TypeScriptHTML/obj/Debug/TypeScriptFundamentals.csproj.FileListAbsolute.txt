@@ -16,3 +16,4 @@ C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\bin\TypeScriptFundamentals.
 C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.dll
 C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.pdb
 C:\Projects\Tests\TypeScript-Template\TypeScriptHTML\obj\Debug\TypeScriptFundamentals.csprojResolveAssemblyReference.cache
+C:\Users\Ivan_Petkov\Documents\Visual Studio 2015\Projects\TypeScriptHTML\TypeScriptHTML\bin\typings\jquery\jquery.d.ts

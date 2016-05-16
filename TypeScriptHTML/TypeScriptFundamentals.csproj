@@ -50,8 +50,11 @@
     <TypeScriptCompile Include="Scripts\interfaces\jobs\IJob.ts" />
     <TypeScriptCompile Include="Scripts\jobs\Job.ts" />
     <TypeScriptCompile Include="Scripts\jobs\JobResponsibility.ts" />
-    <TypeScriptCompile Include="Scripts\tests\persons\WorkerTests.ts" />
-    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\assert\assert.d.ts" />
+    <TypeScriptCompile Include="tests\persons\WorkerTests.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="typings\mocha\mocha-node.d.ts" />
     <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
@@ -66,7 +69,6 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
