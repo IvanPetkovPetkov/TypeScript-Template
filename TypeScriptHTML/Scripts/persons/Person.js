@@ -11,7 +11,7 @@ var Persons;
             return 'Hello, I\'m ' + this.firstName + ' ' + this.lastName;
         };
         return Person;
-    })();
+    }());
     Persons.Person = Person;
 })(Persons || (Persons = {}));
 //# sourceMappingURL=Person.js.map
