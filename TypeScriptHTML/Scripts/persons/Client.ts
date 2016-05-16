@@ -1,7 +1,8 @@
 ﻿module Persons {
-    @logClass
+
+    @log
     export class Client extends Person implements interfaces.persons.IClient {
-        @logProperty
+        @log
         private _email: string;
 
         constructor(firstName: string, lastName: string, sex: Sex, age: number, email: string ) {
@@ -9,14 +10,20 @@
             this._email = email;
         }
 
-        //define getters and setters
+        //define getter
         get email() {
             return this._email;
         }
 
-        @logMethod
+        //method log
+        @log
         introduce() {
             return super.introduce() + ' - ' + this.email;
+        }
+
+        @log
+        updateMail( @log newEmail: string ) : void{
+            this._email = newEmail;
         }
     }
 }

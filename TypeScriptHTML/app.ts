@@ -144,6 +144,7 @@ console.log(msg);
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
 
+//class and property  decorators
 var someClient = new Persons.Client('Client', 'Testov', Sex.Male, 23, 'test@test.com' );
 //someClient.introduce();
 
@@ -152,7 +153,14 @@ user = someClient;
 user.introduce();
 
 user = someWorker;
+//method decorator
 user.introduce();
+
+// with parameter decorator
+someClient.updateMail("new@test.com");
+console.log('-----------------static methods----------------');
+Persons.Person.introduceStatic();
+Persons.Worker.introduceStatic();
 
 console.log('---------------------------------------');
 console.log('-----------------jQuery----------------');
