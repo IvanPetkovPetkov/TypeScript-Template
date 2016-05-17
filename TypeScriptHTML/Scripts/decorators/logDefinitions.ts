@@ -54,6 +54,7 @@ function logClass(target: any) {
  
     // copy prototype so intanceof operator still works
     f.prototype = original.prototype;
+    f.__inject__ = original.__inject__
  
     // return new constructor (will override original)
     return f;

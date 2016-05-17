@@ -68,8 +68,9 @@
             return super.introduce() + ' - ' + this.additionalInfo.experince + ' years experiance' + ' email:' + this.additionalInfo.email;
         }
 
-        static introduceStatic(): void {
-            console.log("Static " + this.classType + " method");
+        @log
+        static introduceStatic(): string {
+            return "Static " + this.classType + " method";
         }
     }
 }

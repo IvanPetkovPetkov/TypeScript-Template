@@ -143,9 +143,19 @@ console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
 
 var person = new Persons.Person('Client', 'Testov', Gender.Male, 23);
+
+
+//dependency injection
+var injector = new Persons.Injector();
+injector.mapValue('person', person);
+injector.mapValue('email', 'injected@test.com');
+var someClient = injector.instantiate(Persons.Client);
+
+//var someClient = new Persons.Client(person, 'test@test.com');
+
 //class and property  decorator
-var someClient = new Persons.Client(person,'test@test.com');
-//someClient.introduce();
+//var someClient = new Persons.Client('test@test.com');
+someClient.introduce();
 
 var user: Persons.Client | Persons.Worker;
 user = someClient;
@@ -157,13 +167,20 @@ user.introduce();
 
 // with parameter decorator
 someClient.updateMail("new@test.com");
+someClient.introduce();
+
 console.log('-----------------static methods----------------');
+
 Persons.Person.introduceStatic();
 Persons.Worker.introduceStatic();
 
+console.log('-----------------decorator pattern------------');
+
 var decoratedClient = new Persons.ClientDecorator("decorated@client.com", someClient);
+decoratedClient.introduce();
 
 console.log('---------------------------------------');
+
 console.log('-----------------jQuery----------------');
 //=====================================================================
 $(document).ready(function () {
