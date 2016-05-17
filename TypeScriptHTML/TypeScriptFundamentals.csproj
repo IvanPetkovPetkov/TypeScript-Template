@@ -41,7 +41,9 @@
     <TypeScriptCompile Include="Scripts\collections\List.ts" />
     <TypeScriptCompile Include="Scripts\consts\Consts.ts" />
     <TypeScriptCompile Include="Scripts\decorators\definitions.ts" />
+    <TypeScriptCompile Include="Scripts\interfaces\persons\IIntroducable.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IClient.ts" />
+    <TypeScriptCompile Include="Scripts\persons\ClientDecorator.ts" />
     <TypeScriptCompile Include="Scripts\persons\Client.ts" />
     <TypeScriptCompile Include="Scripts\persons\Worker.ts" />
     <TypeScriptCompile Include="Scripts\persons\Person.ts" />
@@ -54,11 +56,6 @@
     <TypeScriptCompile Include="Scripts\jobs\Job.ts" />
     <TypeScriptCompile Include="Scripts\jobs\JobResponsibility.ts" />
     <TypeScriptCompile Include="Scripts\tests\persons\WorkerTests.ts" />
-    <TypeScriptCompile Include="Scripts\typings\assertion-error\assertion-error.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\chai\chai.d.ts" />
-    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-2.2.3.min.map" />
@@ -72,9 +69,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Scripts\typings\assertion-error\" />
+    <Folder Include="Scripts\typings\assert\" />
+    <Folder Include="Scripts\typings\chai\" />
+    <Folder Include="Scripts\typings\expect.js\" />
+    <Folder Include="Scripts\typings\jquery\" />
     <Folder Include="Scripts\typings\mocha\" />
     <Folder Include="Scripts\typings\node\" />
     <Folder Include="Scripts\typings\reflect-metadata\" />
+    <Folder Include="Scripts\typings\requirejs\" />
+    <Folder Include="typings\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
@@ -112,7 +116,7 @@
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
-    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
     <TypeScriptOutFile />
     <TypeScriptOutDir />
     <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>

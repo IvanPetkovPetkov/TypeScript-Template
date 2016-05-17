@@ -101,7 +101,7 @@ function logParameter(target: any, key: string, index: number) {
 //decorator factory
 function log(...args: any[]) {
     args = args.filter(function (element) {
-        return element!=null;
+        return element !== null && element !== 'undefined';
     });
     switch (args.length) {
         case 1:
