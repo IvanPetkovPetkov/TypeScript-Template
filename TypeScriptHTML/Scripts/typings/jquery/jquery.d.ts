@@ -1130,7 +1130,7 @@ interface JQueryStatic {
      *
      * @param data a well-formed XML string to be parsed
      */
-    parseXML(data: string): XMLDocument;
+    parGenderML(data: string): XMLDocument;
 
     /**
      * Remove the whitespace from the beginning and end of a string.

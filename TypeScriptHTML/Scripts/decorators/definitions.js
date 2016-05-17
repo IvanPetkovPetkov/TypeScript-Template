@@ -1,19 +1,35 @@
-function logMethod(target, propertyKey, descriptor) {
-    var originalMethod = descriptor.value; // save a reference to the original method
-    // NOTE: Do not use arrow syntax here. Use a function expression in 
-    // order to use the correct value of `this` in this method (see notes below)
+/// <reference path="../typings/reflect-metadata/reflect-metadata.d.ts" />
+//method decorator
+function logMethod(target, key, descriptor) {
+    var originalMethod = descriptor.value;
     descriptor.value = function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
             args[_i - 0] = arguments[_i];
         }
-        console.log("The method args are: " + JSON.stringify(args)); // pre
-        var result = originalMethod.apply(this, args); // run and store the result
-        console.log("The return value is: " + result); // post
-        return result; // return the result of the original method
+        var indices = Reflect.getMetadata("log_" + key + "_parameters", target, key);
+        if (Array.isArray(indices)) {
+            for (var i = 0; i < args.length; i++) {
+                if (indices.indexOf(i) !== -1) {
+                    var arg = args[i];
+                    var argStr = JSON.stringify(arg) || arg.toString();
+                    console.log(key + " arg[" + i + "]: " + argStr);
+                }
+            }
+            var result = originalMethod.apply(this, args);
+            return result;
+        }
+        else {
+            var a = args.map(function (a) { return (JSON.stringify(a) || a.toString()); }).join();
+            var result = originalMethod.apply(this, args);
+            var r = JSON.stringify(result);
+            console.log("Call: " + key + "(" + a + ") => " + r);
+            return result;
+        }
     };
     return descriptor;
 }
+//class decorator
 function logClass(target) {
     // save a reference to the original constructor
     var original = target;
@@ -39,6 +55,7 @@ function logClass(target) {
     // return new constructor (will override original)
     return f;
 }
+//property decorator
 function logProperty(target, key) {
     // property value
     var _val = this[key];
@@ -61,6 +78,35 @@ function logProperty(target, key) {
             enumerable: true,
             configurable: true
         });
+    }
+}
+//parameter decorator
+function logParameter(target, key, index) {
+    var indices = Reflect.getMetadata("log_" + key + "_parameters", target, key) || [];
+    indices.push(index);
+    Reflect.defineMetadata("log_" + key + "_parameters", indices, target, key);
+}
+//decorator factory
+function log() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i - 0] = arguments[_i];
+    }
+    args = args.filter(function (element) {
+        return element != null;
+    });
+    switch (args.length) {
+        case 1:
+            return logClass.apply(this, args);
+        case 2:
+            return logProperty.apply(this, args);
+        case 3:
+            if (typeof args[2] === "number") {
+                return logParameter.apply(this, args);
+            }
+            return logMethod.apply(this, args);
+        default:
+            throw new Error("Decorators are not valid here!");
     }
 }
 //# sourceMappingURL=definitions.js.map

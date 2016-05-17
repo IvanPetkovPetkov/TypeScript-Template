@@ -2315,7 +2315,7 @@ declare module "constants" {
     export var SSL_OP_CIPHER_SERVER_PREFERENCE: number;
     export var SSL_OP_CISCO_ANYCONNECT: number;
     export var SSL_OP_COOKIE_EXCHANGE: number;
-    export var SSL_OP_CRYPTOPRO_TLSEXT_BUG: number;
+    export var SSL_OP_CRYPTOPRO_TLGenderT_BUG: number;
     export var SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: number;
     export var SSL_OP_EPHEMERAL_RSA: number;
     export var SSL_OP_LEGACY_SERVER_CONNECT: number;

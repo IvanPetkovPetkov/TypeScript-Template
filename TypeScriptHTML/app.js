@@ -1,4 +1,3 @@
-///// <reference path="typings/jquery/jquery.d.ts" />
 //import jobs = Jobs;   //import namespaces
 //import persons = Persons;
 var stringType;
@@ -87,7 +86,7 @@ someGenericListOfString.add('asbv');
 someGenericListOfString.add('asbvas');
 console.log('someGenericListOfString.count: ' + someGenericListOfString.count);
 var someGenericListOfWorkers = new Collections.ListWorkers();
-someGenericListOfWorkers.add(new Persons.Worker('Ivan', 'Petkov', Sex.Male, 32, { experince: 8, email: 'ivan@epam.com' }));
+someGenericListOfWorkers.add(new Persons.Worker('Ivan', 'Petkov', Gender.Male, 32, { experince: 8, email: 'ivan@epam.com' }));
 console.log('someGenericListOfWorkers.count: ' + someGenericListOfWorkers.count);
 //=====================================================================
 console.log('---------------------------------------');
@@ -99,9 +98,9 @@ console.log(collection['Second']);
 //=====================================================================
 console.log('---------------------------------------');
 console.log('------------------OOP------------------');
-var somePerson = new Persons.Person('Ivan', 'Petkov', Sex.Male, 32);
+var somePerson = new Persons.Person('Ivan', 'Petkov', Gender.Male, 32);
 console.log('Call introduce() method from Person class: ' + somePerson.introduce());
-var someWorker = new Persons.Worker('Ivan', 'Petkov', Sex.Male, 32, { experince: 8, email: 'ivan@epam.com' });
+var someWorker = new Persons.Worker('Ivan', 'Petkov', Gender.Male, 32, { experince: 8, email: 'ivan@epam.com' });
 console.log('Call introduce() method from Worker class: ' + someWorker.introduce());
 //type casting
 var person;
@@ -119,7 +118,7 @@ console.log(msg);
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
 //class and property  decorator
-var someClient = new Persons.Client('Client', 'Testov', Sex.Male, 23, 'test@test.com');
+var someClient = new Persons.Client('Client', 'Testov', Gender.Male, 23, 'test@test.com');
 //someClient.introduce();
 var user;
 user = someClient;

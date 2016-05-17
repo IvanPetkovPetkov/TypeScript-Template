@@ -23,4 +23,4 @@ var Jobs;
     }());
     Jobs.Job = Job;
 })(Jobs || (Jobs = {}));
-//# sourceMappingURL=Job.js.map
+//# sourceMappingURL=job.js.map

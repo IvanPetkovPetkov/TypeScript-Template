@@ -3,7 +3,7 @@
     export class Person implements interfaces.persons.IPerson {
         static classType: string = "Person";    
 
-        constructor(public firstName: string, public lastName: string, public sex: Sex, public age: number) {
+        constructor(public firstName: string, public lastName: string, public Gender: Gender, public age: number) {
 
         }
        

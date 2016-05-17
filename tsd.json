@@ -10,6 +10,12 @@
     },
     "assertion-error/assertion-error.d.ts": {
       "commit": "398bd742115e2b071ab3edf8b543b6df6fa62dc2"
+    },
+    "node/node.d.ts": {
+      "commit": "398bd742115e2b071ab3edf8b543b6df6fa62dc2"
+    },
+    "requirejs/require.d.ts": {
+      "commit": "398bd742115e2b071ab3edf8b543b6df6fa62dc2"
     }
   }
 }

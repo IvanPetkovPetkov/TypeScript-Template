@@ -9,33 +9,44 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
 var Persons;
 (function (Persons) {
     var Client = (function (_super) {
         __extends(Client, _super);
-        function Client(firstName, lastName, sex, age, email) {
-            _super.call(this, firstName, lastName, sex, age); //reuse the base functionality
+        function Client(firstName, lastName, Gender, age, email) {
+            _super.call(this, firstName, lastName, Gender, age); //reuse the base functionality
             this._email = email;
         }
         Object.defineProperty(Client.prototype, "email", {
-            //define getters and setters
+            //define getter
             get: function () {
                 return this._email;
             },
             enumerable: true,
             configurable: true
         });
+        //method log
         Client.prototype.introduce = function () {
             return _super.prototype.introduce.call(this) + ' - ' + this.email;
         };
+        Client.prototype.updateMail = function (newEmail) {
+            this._email = newEmail;
+        };
         __decorate([
-            logProperty
+            log
         ], Client.prototype, "_email", void 0);
         __decorate([
-            logMethod
+            log
         ], Client.prototype, "introduce", null);
+        __decorate([
+            log,
+            __param(0, log)
+        ], Client.prototype, "updateMail", null);
         Client = __decorate([
-            logClass
+            log
         ], Client);
         return Client;
     }(Persons.Person));

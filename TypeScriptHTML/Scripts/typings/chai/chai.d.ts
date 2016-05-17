@@ -359,7 +359,7 @@ declare namespace Chai {
 
         ifError(val: any, msg?: string): void;
 
-        isExtensible(obj: {}, msg?: string): void;
+        iGendertensible(obj: {}, msg?: string): void;
         extensible(obj: {}, msg?: string): void;
         isNotExtensible(obj: {}, msg?: string): void;
         notExtensible(obj: {}, msg?: string): void;
@@ -392,7 +392,7 @@ declare namespace Chai {
 
 declare var chai: Chai.ChaiStatic;
 
-declare module "chai" {
+declare module 'chai' {
     export = chai;
 }
 

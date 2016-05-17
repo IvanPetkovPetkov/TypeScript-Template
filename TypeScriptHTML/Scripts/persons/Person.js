@@ -1,10 +1,10 @@
 var Persons;
 (function (Persons) {
     var Person = (function () {
-        function Person(firstName, lastName, sex, age) {
+        function Person(firstName, lastName, Gender, age) {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.sex = sex;
+            this.Gender = Gender;
             this.age = age;
         }
         Person.prototype.introduce = function () {
@@ -15,7 +15,7 @@ var Persons;
         };
         Person.classType = "Person";
         return Person;
-    })();
+    }());
     Persons.Person = Person;
 })(Persons || (Persons = {}));
 //# sourceMappingURL=Person.js.map

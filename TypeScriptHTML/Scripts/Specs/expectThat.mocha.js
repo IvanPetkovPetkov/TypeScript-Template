@@ -16,9 +16,9 @@ expectThatApi = (function(expectThatApi) {
     },
     executeThrowAssertion: function(assertionToEvaluate, expected, customAssertion) {
       if (typeof customAssertion.expected !== "undefined") {
-        return assertionToEvaluate.throwsException(expected);
+        return assertionToEvaluate.throwGenderception(expected);
       } else {
-        return assertionToEvaluate.throwsException();
+        return assertionToEvaluate.throwGenderception();
       }
     },
     executeEqualToAssertion: function(isShould, assertionToEvaluate, expected) {
@@ -195,7 +195,7 @@ expectThatApi = (function(expectThatApi) {
     isFalse: function() {
       return this.assertThat(!this.actual, "The expected value was: '{expected}' and the actual value was: '" + this.actual + "'.");
     },
-    throwsException: function(message) {
+    throwGenderception: function(message) {
       try {
         this.actual();
         return this.assertThat(false, "The function did not throw an exception");

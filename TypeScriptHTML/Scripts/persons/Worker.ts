@@ -10,8 +10,8 @@
 
         Jobs = new Array<IJobs.IJob>();
 
-        constructor(firstName: string, lastName: string, sex: Sex, age: number, additionalInfo: { experince: number, email: string }) {
-            super(firstName, lastName, sex, age);  
+        constructor(firstName: string, lastName: string, Gender: Gender, age: number, additionalInfo: { experince: number, email: string }) {
+            super(firstName, lastName, Gender, age);  
             this._monthlyIncome = 0;
             this.additionalInfo = additionalInfo;
         }
@@ -21,7 +21,7 @@
         }
 
         set monthlyIncome(newMonthlyIncome: number) {
-            if (Sex.Male) {
+            if (Gender.Male) {
                 if (newMonthlyIncome < 0) {
                     throw new Error('Not good!');
                 }
