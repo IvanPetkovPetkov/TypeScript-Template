@@ -139,9 +139,13 @@ console.log('Display all Jobs with Responsibilities');
 var msg = someWorker.displayJobResponsibility();
 console.log(msg);
 
+if (someWorker instanceof Persons.Person)
+    console.log('somePerson is instanceof Persons.Person');
+if (someWorker instanceof Persons.Person)
+    console.log('someWorker is instanceof Persons.Person');
+
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
-
 
 //class and property  decorator
 var someClient = new Persons.Client('Client', 'Testov', Gender.Male, 23, 'test@test.com');
