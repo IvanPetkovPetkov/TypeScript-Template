@@ -118,7 +118,7 @@ var msg = someWorker.displayJobResponsibility();
 console.log(msg);
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
-//class and property  decorators
+//class and property  decorator
 var someClient = new Persons.Client('Client', 'Testov', Sex.Male, 23, 'test@test.com');
 //someClient.introduce();
 var user;

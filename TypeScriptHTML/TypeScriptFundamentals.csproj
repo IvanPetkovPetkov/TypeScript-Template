@@ -29,6 +29,7 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\Reflect.js" />
     <Content Include="Scripts\Specs\expectThat.mocha.js" />
     <Content Include="Scripts\Specs\expectThat.mocha.min.js" />
     <Content Include="Scripts\Specs\index.html" />
@@ -71,6 +72,7 @@
   <ItemGroup>
     <Folder Include="Scripts\typings\mocha\" />
     <Folder Include="Scripts\typings\node\" />
+    <Folder Include="Scripts\typings\reflect-metadata\" />
     <Folder Include="typings\" />
   </ItemGroup>
   <PropertyGroup>
@@ -109,7 +111,7 @@
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
-    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
     <TypeScriptOutFile />
     <TypeScriptOutDir />
     <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
