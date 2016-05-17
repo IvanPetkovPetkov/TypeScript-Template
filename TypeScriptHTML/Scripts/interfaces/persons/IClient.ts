@@ -1,6 +1,6 @@
 ﻿module interfaces.persons {
 
-    export interface IClient extends IPerson {
+    export interface IClient {
         email: string;
     }
 }

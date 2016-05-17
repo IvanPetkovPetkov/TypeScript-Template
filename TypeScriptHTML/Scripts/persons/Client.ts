@@ -1,12 +1,13 @@
 ﻿module Persons {
 
     @log
-    export class Client extends Person implements interfaces.persons.IClient {
+    export class Client implements interfaces.persons.IClient, interfaces.persons.IIntroducable {
         @log
         private _email: string;
+        private person: interfaces.persons.IIntroducable;
 
-        constructor(firstName: string, lastName: string, Gender: Gender, age: number, email: string ) {
-            super(firstName, lastName, Gender, age);  //reuse the base functionality
+        constructor(person: interfaces.persons.IIntroducable, email: string ) {
+            this.person = person;
             this._email = email;
         }
 
@@ -17,8 +18,8 @@
 
         //method log
         @log
-        introduce() {
-            return super.introduce() + ' - ' + this.email;
+        introduce():string {
+            return person.introduce() + ' - ' + this.email;
         }
 
         @log
