@@ -1,4 +1,3 @@
-/// <reference path="Scripts/typings/tsd.d.ts" />
 //import jobs = Jobs;   //import namespaces
 //import persons = Persons;
 var stringType;
@@ -118,13 +117,20 @@ var msg = someWorker.displayJobResponsibility();
 console.log(msg);
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
+//class and property  decorator
 var someClient = new Persons.Client('Client', 'Testov', Gender.Male, 23, 'test@test.com');
 //someClient.introduce();
 var user;
 user = someClient;
 user.introduce();
 user = someWorker;
+//method decorator
 user.introduce();
+// with parameter decorator
+someClient.updateMail("new@test.com");
+console.log('-----------------static methods----------------');
+Persons.Person.introduceStatic();
+Persons.Worker.introduceStatic();
 console.log('---------------------------------------');
 console.log('-----------------jQuery----------------');
 //=====================================================================

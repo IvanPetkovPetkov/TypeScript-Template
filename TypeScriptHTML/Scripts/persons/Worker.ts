@@ -2,6 +2,8 @@
     import IJobs = interfaces.jobs;   
 
     export class Worker extends Person implements interfaces.persons.IWorker {
+        static classType: string = "Worker";  
+        
         private _monthlyIncome: number;
 
         additionalInfo: { experince: number; email: string };
@@ -64,6 +66,10 @@
 
         introduce() {
             return super.introduce() + ' - ' + this.additionalInfo.experince + ' years experiance' + ' email:' + this.additionalInfo.email;
+        }
+
+        static introduceStatic(): void {
+            console.log("Static " + this.classType + " method");
         }
     }
 }
