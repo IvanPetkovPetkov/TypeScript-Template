@@ -11,7 +11,7 @@ describe("Calculator", function () {
     });
     describe("introduce()", function () {
         it("should have correct results", function () {
-            var person = new Persons.Person('Ivan', 'Petkov', Gender.Male, 32);
+            //var person: Persons.Person = new Persons.Person('Ivan', 'Petkov', Gender.Male, 32);
             var personIntroduction = person.introduce();
             if (personIntroduction != "Hello, I'm Ivan Petkov") {
                 throw new Error("Not return correct string!");

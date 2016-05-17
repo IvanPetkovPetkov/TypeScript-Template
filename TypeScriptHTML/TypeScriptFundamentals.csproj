@@ -33,6 +33,7 @@
     <Content Include="Scripts\Specs\expectThat.mocha.js" />
     <Content Include="Scripts\Specs\expectThat.mocha.min.js" />
     <Content Include="Scripts\Specs\index.html" />
+    <Content Include="Scripts\tests\persons\WorkerTests.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -52,9 +53,9 @@
     <TypeScriptCompile Include="Scripts\interfaces\jobs\IJob.ts" />
     <TypeScriptCompile Include="Scripts\jobs\Job.ts" />
     <TypeScriptCompile Include="Scripts\jobs\JobResponsibility.ts" />
+    <TypeScriptCompile Include="Scripts\tests\persons\WorkerTests.ts" />
     <TypeScriptCompile Include="Scripts\typings\assertion-error\assertion-error.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\chai\chai.d.ts" />
-    <TypeScriptCompile Include="tests\persons\WorkerTests.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </TypeScriptCompile>
@@ -62,6 +63,7 @@
   <ItemGroup>
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="Scripts\Specs\example.spec.coffee" />
+    <Content Include="Scripts\tests\persons\WorkerTests.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
