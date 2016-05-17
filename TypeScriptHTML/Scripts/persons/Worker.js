@@ -7,8 +7,8 @@ var Persons;
 (function (Persons) {
     var Worker = (function (_super) {
         __extends(Worker, _super);
-        function Worker(firstName, lastName, sex, age, additionalInfo) {
-            _super.call(this, firstName, lastName, sex, age);
+        function Worker(firstName, lastName, Gender, age, additionalInfo) {
+            _super.call(this, firstName, lastName, Gender, age);
             this.Jobs = new Array();
             this._monthlyIncome = 0;
             this.additionalInfo = additionalInfo;
@@ -18,7 +18,7 @@ var Persons;
                 return this._monthlyIncome;
             },
             set: function (newMonthlyIncome) {
-                if (Sex.Male) {
+                if (Gender.Male) {
                     if (newMonthlyIncome < 0) {
                         throw new Error('Not good!');
                     }

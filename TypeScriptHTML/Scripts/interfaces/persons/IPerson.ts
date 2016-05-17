@@ -2,7 +2,7 @@
     export interface IPerson {
         firstName: string;
         lastName: string;
-        sex: Sex;
+        Gender: Gender;
         age?: number; 
     }
 }

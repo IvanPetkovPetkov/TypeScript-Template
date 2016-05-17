@@ -1,4 +1,4 @@
-﻿enum Sex {
+﻿enum Gender {
     Male,
     Female
 };

@@ -13,8 +13,8 @@ var Persons;
 (function (Persons) {
     var Client = (function (_super) {
         __extends(Client, _super);
-        function Client(firstName, lastName, sex, age, email) {
-            _super.call(this, firstName, lastName, sex, age); //reuse the base functionality
+        function Client(firstName, lastName, Gender, age, email) {
+            _super.call(this, firstName, lastName, Gender, age); //reuse the base functionality
             this._email = email;
         }
         Object.defineProperty(Client.prototype, "email", {
