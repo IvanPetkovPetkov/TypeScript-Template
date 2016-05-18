@@ -3,7 +3,6 @@
         firstName: string;
         lastName: string;
         gender: Gender;
-        introduce();
         age?: number; 
     }
 }

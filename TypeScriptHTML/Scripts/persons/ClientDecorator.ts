@@ -2,8 +2,9 @@
     @log
     export class ClientDecorator extends Client  {
         constructor(email: string, client: interfaces.persons.IIntroducable) {
-            // when not injected super(client, email);
-             super();
+            // when not injected 
+            super();
+           //  super();
         }
 
         @log

@@ -150,34 +150,50 @@ console.log('Display all Jobs with Responsibilities');
 var msg = someWorker.displayJobResponsibility();
 console.log(msg);
 
-//console.log('-----------------Clients----------------');
-//console.log('------------logging with decorators-----');
+console.log('-----------------Clients----------------');
+console.log('------------logging with decorators-----');
+
+var person = new Persons.Person('Client', 'Testov', Gender.Male, 23);
 
 
-//var person = new Persons.Person('Client', 'Testov', Gender.Male, 23);
-////class and property  decorator
-//var someClient = new Persons.Client(person,'test@test.com');
-////someClient.introduce();
+//dependency injection
+var injector = new Persons.Injector();
+injector.mapValue('person', person);
+injector.mapValue('email', 'injected@test.com');
+var someClient = injector.instantiate(Persons.Client);
 
-//var user: Persons.Client | Persons.Worker;
-//user = someClient;
-//user.introduce();
+//var someClient = new Persons.Client(person, 'test@test.com');
 
-//user = someWorker;
-////method decorator
-//user.introduce();
+//class and property  decorator
+//var someClient = new Persons.Client('test@test.com');
+someClient.introduce();
 
-//// with parameter decorator
-//someClient.updateMail("new@test.com");
-//console.log('-----------------static methods----------------');
-//Persons.Person.introduceStatic();
-//Persons.Worker.introduceStatic();
+var user: Persons.Client | Persons.Worker;
+user = someClient;
+user.introduce();
 
-//var decoratedClient = new Persons.ClientDecorator("decorated@client.com", someClient);
+user = someWorker;
+//method decorator
+user.introduce();
 
-//console.log('---------------------------------------');
-//console.log('-----------------jQuery----------------');
-////=====================================================================
-//$(document).ready(function () {
-//    $('#title')[0].innerHTML = 'TypeScript fundamentals';
-//});
+// with parameter decorator
+someClient.updateMail("new@test.com");
+someClient.introduce();
+
+console.log('-----------------static methods----------------');
+
+Persons.Person.introduceStatic();
+Persons.Worker.introduceStatic();
+
+console.log('-----------------decorator pattern------------');
+
+var decoratedClient = new Persons.ClientDecorator("decorated@client.com", someClient);
+decoratedClient.introduce();
+
+console.log('---------------------------------------');
+
+console.log('-----------------jQuery----------------');
+//=====================================================================
+$(document).ready(function () {
+    $('#title')[0].innerHTML = 'TypeScript fundamentals';
+});
