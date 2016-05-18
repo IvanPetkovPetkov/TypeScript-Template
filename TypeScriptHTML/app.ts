@@ -153,16 +153,16 @@ console.log(msg);
 console.log('-----------------Clients----------------');
 console.log('------------logging with decorators-----');
 
-var person = new Persons.Person('Client', 'Testov', Gender.Male, 23);
+var person1 = new Persons.Person('Client', 'Testov', Gender.Male, 23);
 
 
 //dependency injection
-var injector = new Persons.Injector();
-injector.mapValue('person', person);
-injector.mapValue('email', 'injected@test.com');
-var someClient = injector.instantiate(Persons.Client);
+//var injector = new Persons.Injector();
+//injector.mapValue('person', person1);
+//injector.mapValue('email', 'injected@test.com');
+//var someClient = injector.instantiate(Persons.Client);
 
-//var someClient = new Persons.Client(person, 'test@test.com');
+var someClient = new Persons.Client(person, 'test@test.com');
 
 //class and property  decorator
 //var someClient = new Persons.Client('test@test.com');
