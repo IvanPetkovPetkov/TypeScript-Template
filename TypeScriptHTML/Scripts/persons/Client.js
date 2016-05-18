@@ -1,8 +1,3 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -14,10 +9,9 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var Persons;
 (function (Persons) {
-    var Client = (function (_super) {
-        __extends(Client, _super);
-        function Client(firstName, lastName, Gender, age, email) {
-            _super.call(this, firstName, lastName, Gender, age); //reuse the base functionality
+    var Client = (function () {
+        function Client(person, email) {
+            this.person = person;
             this._email = email;
         }
         Object.defineProperty(Client.prototype, "email", {
@@ -30,7 +24,7 @@ var Persons;
         });
         //method log
         Client.prototype.introduce = function () {
-            return _super.prototype.introduce.call(this) + ' - ' + this.email;
+            return this.person.introduce() + ' - ' + this.email;
         };
         Client.prototype.updateMail = function (newEmail) {
             this._email = newEmail;
@@ -49,7 +43,7 @@ var Persons;
             log
         ], Client);
         return Client;
-    }(Persons.Person));
+    }());
     Persons.Client = Client;
 })(Persons || (Persons = {}));
 //# sourceMappingURL=Client.js.map

@@ -43,8 +43,8 @@
     <TypeScriptCompile Include="Scripts\decorators\definitions.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IIntroducable.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IClient.ts" />
-    <TypeScriptCompile Include="Scripts\persons\ClientDecorator.ts" />
     <TypeScriptCompile Include="Scripts\persons\Client.ts" />
+    <TypeScriptCompile Include="Scripts\persons\ClientDecorator.ts" />
     <TypeScriptCompile Include="Scripts\persons\Worker.ts" />
     <TypeScriptCompile Include="Scripts\persons\Person.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IWorker.ts" />

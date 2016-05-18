@@ -93,7 +93,7 @@ function log() {
         args[_i - 0] = arguments[_i];
     }
     args = args.filter(function (element) {
-        return element != null;
+        return element !== null && element !== 'undefined';
     });
     switch (args.length) {
         case 1:

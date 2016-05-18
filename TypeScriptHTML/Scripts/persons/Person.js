@@ -1,10 +1,10 @@
 var Persons;
 (function (Persons) {
     var Person = (function () {
-        function Person(firstName, lastName, Gender, age) {
+        function Person(firstName, lastName, gender, age) {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.Gender = Gender;
+            this.gender = gender;
             this.age = age;
         }
         Person.prototype.introduce = function () {

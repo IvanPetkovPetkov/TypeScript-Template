@@ -6,6 +6,8 @@
 /// <reference path="../../interfaces/persons/IPerson.ts" />
 /// <reference path="../../consts/Consts.ts" />
 
+//import mychai from 'chaimodule';
+//import mychai = require('chaimodule');
 //import mychai = require('chai');
 //var expect = mychai.expect;
 //import { expect } from 'chai';

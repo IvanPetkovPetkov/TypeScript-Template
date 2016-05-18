@@ -19,7 +19,7 @@
         //method log
         @log
         introduce():string {
-            return person.introduce() + ' - ' + this.email;
+            return this.person.introduce() + ' - ' + this.email;
         }
 
         @log
