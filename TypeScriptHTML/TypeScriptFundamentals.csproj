@@ -40,7 +40,9 @@
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Scripts\collections\List.ts" />
     <TypeScriptCompile Include="Scripts\consts\Consts.ts" />
-    <TypeScriptCompile Include="Scripts\decorators\definitions.ts" />
+    <TypeScriptCompile Include="Scripts\decorators\injectDefinitions.ts" />
+    <TypeScriptCompile Include="Scripts\decorators\logDefinitions.ts" />
+    <TypeScriptCompile Include="Scripts\Injector.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IIntroducable.ts" />
     <TypeScriptCompile Include="Scripts\interfaces\persons\IClient.ts" />
     <TypeScriptCompile Include="Scripts\persons\Client.ts" />
